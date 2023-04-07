@@ -10,6 +10,9 @@ var resLength = 0;
 var usedIds = [];
 
 async function go(searchTerm,data,list){
+    console.log("searchTerm", searchTerm)
+    console.log("data", data)
+    console.log("list", list)
     var arr = Object.entries(data)
     arr.sort((a, b) => a[1].objectBeginDate - b[1].objectBeginDate) 
     let results = arr.filter(function (element) {
